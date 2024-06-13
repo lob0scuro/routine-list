@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <!--import fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/32fa155dce.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="main.js"></script>
+    <title>Good Evening</title>
+  </head>
+  <body>
+    <header>Evening To-Do's</header>
+    <main>
+      <div class="task-tiles">
+        <div class="the-tile">
+          <button class="task-tile">
+            <img
+              onclick="clicked(this)"
+              src="images/evening/dinner.png"
+              alt=""
+            />
+          </button>
+          <h2>Eat Dinner</h2>
+        </div>
+        <div class="the-tile">
+          <button class="task-tile">
+            <img
+              onclick="clicked(this)"
+              src="images/evening/playtime.png"
+              alt=""
+            />
+          </button>
+          <h2>Playtime</h2>
+        </div>
+        <div class="the-tile">
+          <button class="task-tile">
+            <img
+              onclick="clicked(this)"
+              src="images/evening/reading.png"
+              alt=""
+            />
+          </button>
+          <h2>Read a Book</h2>
+        </div>
+        <div class="the-tile">
+          <button class="task-tile">
+            <img onclick="clicked(this)" src="images/evening/pray.png" alt="" />
+          </button>
+          <h2>Pray</h2>
+        </div>
+        <div class="the-tile">
+          <button class="task-tile">
+            <img
+              onclick="clicked(this)"
+              src="images/evening/toothbrush.png"
+              alt=""
+            />
+          </button>
+          <h2>Brush Teeth</h2>
+        </div>
+        <div class="the-tile">
+          <button class="task-tile">
+            <img
+              onclick="clicked(this)"
+              src="images/evening/relax.png"
+              alt=""
+            />
+          </button>
+          <h2>Relax</h2>
+        </div>
+      </div>
+      <div class="home-tag">
+        <a class="home-button" href="index.html">Home</a>
+        <a class="home-button" onclick="reset()">Reset</a>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+:root {
+  --bg1: #cdb4db;
+  --bg2: #ffafcc;
+  --fg1: #ffc8dd;
+  --fg2: #bde0fe;
+  --deco: #a2d2ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-tag {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 25px;
+}
+
+a.home-button {
+  font-size: 2rem;
+  font-weight: 800;
+  border: 4px solid var(--fg1);
+  background-color: var(--deco);
+  border-radius: 25px;
+  padding: 10px;
+  color: #fff;
+  box-shadow: -3px 3px 5px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+a.home-button:hover {
+  transform: translate(-1px, 1px);
+  border: 4px solid var(--deco);
+  color: var(--fg2);
+}
+a.home-button:last-child {
+  background-color: var(--bg2);
+  color: #fff;
+}
+
+body {
+  /* background-color: var(--bg1); */
+  background-image: linear-gradient(-90deg, var(--bg1), var(--fg1));
+  color: var(--fg1);
+  width: 100%;
+  height: 100svh;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 6% 0;
+  background-color: var(--bg2);
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 800;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 10px 6px -2px rgba(0, 0, 0, 0.5);
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 10%;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  border: 8px solid var(--fg1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+  color: #fff;
+  border-radius: 8%;
+}
+
+.card:hover {
+  background: var(--bg2);
+  color: var(--bg1);
+}
+
+.card-title {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+}
+
+/*MORNING/EVENING*/
+
+.task-tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  width: 75%;
+  margin: 5% auto 0 auto;
+}
+
+.task-tiles button {
+  background-color: var(--bg2);
+  box-shadow: -5px 5px 8px -1px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  border: none;
+  padding: 1rem;
+}
+.task-tiles button:hover {
+  transform: translate(-3px, 3px);
+}
+
+.task-tiles button img {
+  width: 150px;
+  height: 150px;
+}
+
+.the-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.the-tile h2 {
+  color: #fff;
+  font-size: 1.6rem;
+  padding-top: 0.8rem;
+}
